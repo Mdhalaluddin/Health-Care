@@ -1,9 +1,10 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
     const navLinks = <>
         <li><NavLink to="/">Home</NavLink></li>
         <li><NavLink to="/service">Service</NavLink></li>
+        <li><NavLink to="/register">Register</NavLink></li>
         <li><NavLink to="/contact">Contact</NavLink></li>
         <li><NavLink to="/about">About</NavLink></li>
 
@@ -28,7 +29,9 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
+                    <Link to={'/login'}>
                     <a className="btn btn-sm">Login</a>
+                    </Link>
                 </div>
             </div>
         </nav>

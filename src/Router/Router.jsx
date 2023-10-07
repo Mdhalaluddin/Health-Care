@@ -3,6 +3,8 @@ import MainLayout from "../Layout/MainLayout";
 import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 import Home from "../Pages/Home/Home";
 import CardDetails from "../Pages/Home/CardDetails/CardDetails";
+import Login from "../Pages/Login/Login";
+import Register from "../Pages/Register/Register";
 
 
 const myCrateRouter = createBrowserRouter([
@@ -20,6 +22,14 @@ const myCrateRouter = createBrowserRouter([
                 path: '/card/:id',
                 element: <CardDetails></CardDetails>,
                 loader: () => fetch('/data.json')
+            },
+            {
+                path: '/login',
+                element: <Login></Login>
+            },
+            {
+                path: '/register',
+                element: <Register></Register>
             }
         ]
     }
