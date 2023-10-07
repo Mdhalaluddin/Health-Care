@@ -29,8 +29,13 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
+                    <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
+                        <div className="w-10 rounded-full">
+                            <img src="https://i.ibb.co/zQ2XBvN/download.jpg" />
+                        </div>
+                    </label>
                     <Link to={'/login'}>
-                    <a className="btn btn-sm">Login</a>
+                        <a className="btn btn-sm">Login</a>
                     </Link>
                 </div>
             </div>
