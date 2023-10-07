@@ -3,7 +3,7 @@ import Navbar from "../Navbar/Navbar";
 
 const MainLayout = () => {
     return (
-        <div>
+        <div className="OpenSans">
             <Navbar></Navbar>
             <Outlet></Outlet>
         </div>

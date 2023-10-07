@@ -1,0 +1,44 @@
+[
+    {
+        "id": "1",
+        "name": "Cardiology",
+        "image": "https://i.ibb.co/VNbQ1sn/Cardiology.jpg",
+        "price": 199.0,
+        "short_description": "Cardiology is a specialized field of medicine that concentrates on the study, diagnosis, and management of heart-related conditions, such as heart disease, arrhythmias, and congenital heart defects. Cardiologists employ various diagnostic tools and treatments, including echocardiograms, angioplasty, and medication, to promote heart health and improve patients' quality of life. Their expertise plays a crucial role in preventing heart-related complications and advancing cardiovascular research."
+    },
+    {
+        "id": "2",
+        "name": "Pulmonary",
+        "image": "https://i.ibb.co/TctMSnS/Pulmonary.jpg",
+        "price": 49.99,
+        "short_description": "Pulmonary medicine, also known as pulmonology, is a medical specialty focused on the respiratory system, particularly the lungs and airways. Pulmonologists diagnose and treat a wide range of respiratory disorders, such as asthma, chronic obstructive pulmonary disease (COPD), pneumonia, and lung cancer. They use techniques like pulmonary function tests and bronchoscopy to assess lung function and develop treatment plans, which may include medications, oxygen therapy, or pulmonary rehabilitation. Pulmonary specialists play a vital role in helping individuals manage respiratory conditions and improve their lung health."
+    },
+    {
+        "id": "3",
+        "name": "Neurology",
+        "image": "https://i.ibb.co/BrR49fg/Neurology.jpg",
+        "price": 79.99,
+        "short_description": "Neurology is a medical specialty that deals with disorders of the nervous system, which includes the brain, spinal cord, and peripheral nerves. Neurologists are trained to diagnose, treat, and manage a wide range of neurological conditions such as epilepsy, stroke, multiple sclerosis, Alzheimer's disease, and Parkinson's disease. They use various diagnostic tools, including imaging studies like MRI and CT scans, and may perform neurological examinations to assess nerve function. Neurology plays a critical role in understanding and addressing disorders that affect the central and peripheral nervous systems, helping patients to improve their neurological health and quality of life."
+    },
+    {
+        "id": "4",
+        "name": "Orthopedics",
+        "image": "https://i.ibb.co/GpBKGKN/Orthopedics.jpg",
+        "price": 299.99,
+        "short_description": "Orthopedics, also known as orthopedic surgery or orthopedics and traumatology, is a medical specialty dedicated to the diagnosis, treatment, and prevention of musculoskeletal disorders. Orthopedic surgeons, or orthopedists, focus on conditions affecting the bones, joints, ligaments, tendons, muscles, and related structures. They provide care for a wide range of issues, including fractures, arthritis, sports injuries, spinal conditions, and congenital deformities. Treatment approaches may involve surgery, physical therapy, medications, or other interventions aimed at restoring function, relieving pain, and enhancing the mobility and overall well-being of patients with musculoskeletal problems. Orthopedics plays a crucial role in helping individuals regain and maintain their mobility and quality of life."
+    },
+    {
+        "id": "5",
+        "name": "Dental Surgery",
+        "image": "https://i.ibb.co/tHvfwTc/Dental-Surgery.jpg",
+        "price": 149.99,
+        "short_description": "Dental surgery is a specialized branch of dentistry that involves surgical procedures to diagnose, treat, and manage oral and maxillofacial conditions. Dental surgeons, also known as oral and maxillofacial surgeons, are highly trained professionals who perform a wide range of surgical interventions, including tooth extractions, dental implant placement, jaw realignment, and treatment of oral pathologies."
+    },
+    {
+        "id": "6",
+        "name": "Laboratory",
+        "image": "https://i.ibb.co/JR0LyNL/Laboratory.webp",
+        "price": 29.99,
+        "short_description": "A laboratory is a controlled environment or facility equipped with specialized instruments and equipment for conducting scientific experiments, research, and analysis. Laboratories are used in various fields, including chemistry, biology, physics, medicine, and engineering. Scientists and researchers work in laboratories to perform experiments, gather data, conduct tests, and analyze samples to advance knowledge, develop new technologies, and make discoveries."
+    }
+]
