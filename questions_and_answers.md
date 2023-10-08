@@ -18,7 +18,7 @@ console.log(greetign);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer:  ?
+#### Answer: `correct answer` C: `undefined` greetigng is empty array. this don't call a variabal ?
 
 <i>Write your explanation here</i>
 
@@ -40,10 +40,10 @@ sum(1, "2");
 - C: `"12"`
 - D: `3`
 
-<details><summary><b>Answer</b><b>Answer: A: `NaN` becase sum 2 is string. string not a number</b> </summary>
+<details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: . 
+#### Answer: `correct answer` C : `"12"` becase sum 2 is string. string not a number. 
 
 <i>Write your explanation here</i>
 
@@ -69,7 +69,7 @@ console.log(food);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: `correct answer` A: `['🍕', '🍫', '🥑', '🍔']`. this answer console log(food). food is match array.
 
 <i>Write your explanation here</i>
 
@@ -94,7 +94,7 @@ console.log(sayHi());
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: `correct answer` B: `Hi there, undefined`
 
 <i>Write your explanation here</i>
 
@@ -122,7 +122,7 @@ console.log(count);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer:`correct answer` C: 3 forEach is loop complements. Output 3, 3 is logger number in array.
 
 <i>Write your explanation here</i>
 
