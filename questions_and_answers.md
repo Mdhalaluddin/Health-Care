@@ -18,7 +18,7 @@ console.log(greetign);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer:  ?
 
 <i>Write your explanation here</i>
 
@@ -43,7 +43,7 @@ sum(1, "2");
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: A: `NaN` becase sum 2 is string. string not a number.
 
 <i>Write your explanation here</i>
 
