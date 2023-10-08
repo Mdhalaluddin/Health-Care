@@ -40,11 +40,10 @@ sum(1, "2");
 - C: `"12"`
 - D: `3`
 
-<details><summary><b>Answer</b></summary>
+<details><summary><b>Answer</b><b>Answer: A: `NaN` becase sum 2 is string. string not a number</b> </summary>
 <p>
 
-#### Answer: ?
--Answer: A: `NaN` becase sum 2 is string. string not a number. 
+#### Answer: . 
 
 <i>Write your explanation here</i>
 
