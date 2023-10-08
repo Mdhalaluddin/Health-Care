@@ -1,14 +1,15 @@
-import { Link,  } from "react-router-dom";
+import { Link, useNavigate,  } from "react-router-dom";
 import Footer from "../Home/Footer/Footer";
 import { useContext, useState } from "react";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
+import swal from 'sweetalert';
 
 
 const Register = () => {
     const [registerError, setRegisterError] = useState('')
     const [success, setSuccess] = useState('')
-    const { createUser, googleSignIn } = useContext(AuthContext)
-    // const navigate = useNavigate();
+    const { createUser } = useContext(AuthContext)
+    const navigate = useNavigate();
     const handleRegister = e => {
         e.preventDefault();
         console.log(e.currentTarget);
@@ -22,15 +23,22 @@ const Register = () => {
         setRegisterError('');
 
         if(password.length<6){
-            setRegisterError(' password should be at least 6 characters or longer')
+            if(setRegisterError){
+                swal(' password should be at least 6 characters or longer')
+            }
             return;
         }
         else if(!/[A-Z]/.test(password)){
-            setRegisterError("Your password must contain at least one upper case letter.");
+           if(setRegisterError)
+            {
+                swal("Your password must contain at least one upper case letter.");
+            }
             return;
         }
         else if(!/^(?=.*[~`!@#$%^&*()--+={}[\]|\\:;"'<>,.?/_₹]).*$/.test(password)){
-            setRegisterError('Your password must contain at least special char from -[ ! @ # $ % ^ & * _ ]')
+           if(setRegisterError){
+            swal('Your password must contain at least special char from -[ ! @ # $ % ^ & * _ ]')
+           }
             return;
         }
         
@@ -38,22 +46,20 @@ const Register = () => {
         createUser(email, password)
         .then(result =>{
             console.log(result.user);
-            // navigate(location?.state? location.state: '/')
-            setSuccess('User Created Succesefully')
+            navigate(location?.state? location.state: '/')
+            if(setSuccess){
+                
+                swal('User Created Succesefully')
+            }
         })
         .catch(error =>{
             console.log(error);
-            setRegisterError(error.message)
+            if(email){
+                if(setRegisterError){
+                    swal('email already in use')
+                }  
+            }
         })
-    //    google sign in
-        googleSignIn()
-            .then(result => {
-                console.log(result.user);
-            })
-            .catch(error => {
-                console.error(error)
-                setRegisterError(error.massage)
-            })
     }
     return (
         <div>
@@ -63,7 +69,7 @@ const Register = () => {
                     <label className="label mt-4">
                         <span className="label-text">Name</span>
                     </label>
-                    <input type="name" placeholder="Name" name="name" className="input input-bordered" required />
+                    <input type="text" placeholder="Name" name="name" className="input input-bordered" required />
                 </div>
                 <div className="form-control w-full">
                     <label className="label mt-4">

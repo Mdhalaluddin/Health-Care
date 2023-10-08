@@ -7,6 +7,8 @@ import Login from "../Pages/Login/Login";
 import Register from "../Pages/Register/Register";
 import PrivetRout from "../ProivetRout/PrivetRout";
 import Cards from "../Pages/Home/Cards/Cards";
+import About from "../Pages/About/About";
+import Contact from "../Pages/Contact/Contact";
 
 
 const myCrateRouter = createBrowserRouter([
@@ -36,6 +38,14 @@ const myCrateRouter = createBrowserRouter([
             {
                 path: '/register',
                 element: <Register></Register>
+            },
+            {
+                path: "/about",
+                element: <About></About>
+            },
+            {
+                path: '/contact',
+                element: <PrivetRout><Contact></Contact></PrivetRout>
             }
         ]
     }

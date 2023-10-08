@@ -14,8 +14,14 @@ const Navbar = () => {
         <li><NavLink to="/">Home</NavLink></li>
         <li><NavLink to="/login">Login</NavLink></li>
         <li><NavLink to="/register">Register</NavLink></li>
-        <li><NavLink to="/contact">Contact</NavLink></li>
         <li><NavLink to="/about">About</NavLink></li>
+
+        {
+            user && <>
+                <li><NavLink to="/contact">Contact</NavLink></li>  
+                <li><NavLink to="/services">Services</NavLink></li>  
+            </>
+        }
 
     </>
     return (
@@ -30,7 +36,10 @@ const Navbar = () => {
                             {navLinks}
                         </ul>
                     </div>
-                    <a className="text-3xl font-bold">Health Care</a>
+                    <div className="flex justify-center">
+                        <img src="https://i.ibb.co/X2xGwSB/logo12.jpg" alt="" className="h-8 w-10" />
+                        <a className="md:text-2xl font-bold">Health Care</a>
+                    </div>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
@@ -39,17 +48,12 @@ const Navbar = () => {
                 </div>
                 <div className="navbar-end">
                     {
-                        user? <img src={user.img} alt="" /> :
-                        <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
-                            <div className="w-10 rounded-full">
-                                <img src="https://i.ibb.co/zQ2XBvN/download.jpg" />
-                            </div>
-                        </label>
-                        
+                        user &&
+                        <img src={user.photoURL} alt="" className="rounded-full w-10" />
                     }
                     {
                         user &&
-                        <p>{user.name}</p>
+                        <p className="mx-3 text-sm">{user.displayName}</p>
 
                     }
                     {

@@ -1,13 +1,15 @@
 import { useContext, useState } from "react";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
 import Footer from "../Home/Footer/Footer";
-import { Link, useLocation, useNavigate,  } from "react-router-dom";
+import { Link, useLocation, useNavigate, } from "react-router-dom";
+import { FcGoogle } from 'react-icons/fc';
+import swal from 'sweetalert';
 
 
 const Login = () => {
     const [singError, setSingError] = useState('')
 
-    const {  signIN } = useContext(AuthContext)
+    const { signIN, signInGoogle } = useContext(AuthContext)
     const location = useLocation();
     console.log('location in te login', location);
     const navigate = useNavigate()
@@ -25,12 +27,33 @@ const Login = () => {
             })
             .catch(error => {
                 console.error(error);
-                setSingError(error.massage)
+                // setSingError(error.massage)
+                if(email){
+                    if(setSingError){
+                        swal('Do not match email')
+                    }  
+                }
+                if(password){
+                    if(setSingError){
+                        swal('Do not match password')
+                    }  
+                }
+            })
+    }
+    //    google sign in
+
+    const handleGoogleSignIn = () => {
+        signInGoogle()
+            .then(result => {
+                console.log(result.user);
+            })
+            .catch(error => {
+                console.error(error)
+                // setSingError(error.massage)
             })
 
-
     }
-   
+
     return (
         <div>
             <h2 className="text-3xl text-center my-8 font-bold">Login Now</h2>
@@ -48,13 +71,19 @@ const Login = () => {
                     <input type="password" name="password" placeholder="password" className="input input-bordered" required />
                 </div>
                 <div className="form-control mt-6">
-                    <button  className="btn btn-primary">Login</button>
+                    <button className="btn btn-primary">Login</button>
                 </div>
+                <div className="text-center">
+                    <button onClick={handleGoogleSignIn} className="btn text-3xl rounded-lg"><FcGoogle></FcGoogle></button>
+
+                </div>
+
                 <p className="mt-2 text-center">Do not have an account? <Link className="text-green-400 font-bold" to="/register">Register</Link></p>
             </form>
             {
                 singError && <p className="text-red-500 text-2xl">{singError}</p>
             }
+
             <Footer></Footer>
         </div>
     );

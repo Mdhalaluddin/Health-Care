@@ -1,21 +1,21 @@
 
 const Banner = () => {
     return (
-        <nav className="grid grid-cols-2 mx-auto rounded-lg">
+        <nav className="grid grid-cols-2 mx-auto rounded-lg mb-32">
             <div className="hero min-h-screen bg-green-500 bg-opacity-80">
                 <div className="hero-content text-center">
                     <div className="max-w-md">
                         <h1 className="lg:text-5xl text-4xl font-bold text-white">Good Health Is The Root Of All Heppiness</h1>
-                        <div className="text-white md:flex mt-16 space-x-2 text-start">
-                            <div className="border-l-4 border-white">
+                        <div className="text-white md:flex mt-16 mx-3 my-4 text-start">
+                            <div className="border-l-4 mt-2 border-white">
                                 <h2 className="text-3xl font-bold px-2">123</h2>
                                 <p className="text-xl px-2">Expert Doctors</p>
                             </div>
-                            <div className="border-l-4 border-white">
+                            <div className="border-l-4 mt-2 border-white">
                                 <h2 className="text-3xl font-bold px-2">1234</h2>
                                 <p className="text-xl px-2">Medical Stuff</p>
                             </div>
-                            <div className="border-l-4 border-white">
+                            <div className="border-l-4 mt-2 border-white">
                                 <h2 className="text-3xl font-bold px-2">12345</h2>
                                 <p className="text-xl px-2">Total Patients</p>
                             </div>

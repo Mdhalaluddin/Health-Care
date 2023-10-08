@@ -1,0 +1,10 @@
+.container{
+    position: relative;
+}
+.photo{
+    position: absolute;
+    top: 320px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+}
