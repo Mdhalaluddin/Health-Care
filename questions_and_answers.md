@@ -43,7 +43,8 @@ sum(1, "2");
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: A: `NaN` becase sum 2 is string. string not a number.
+#### Answer: ?
+-Answer: A: `NaN` becase sum 2 is string. string not a number. 
 
 <i>Write your explanation here</i>
 
