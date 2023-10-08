@@ -5,6 +5,8 @@ import Home from "../Pages/Home/Home";
 import CardDetails from "../Pages/Home/CardDetails/CardDetails";
 import Login from "../Pages/Login/Login";
 import Register from "../Pages/Register/Register";
+import PrivetRout from "../ProivetRout/PrivetRout";
+import Cards from "../Pages/Home/Cards/Cards";
 
 
 const myCrateRouter = createBrowserRouter([
@@ -20,8 +22,12 @@ const myCrateRouter = createBrowserRouter([
             },
             {
                 path: '/card/:id',
-                element: <CardDetails></CardDetails>,
+                element: <PrivetRout><CardDetails></CardDetails></PrivetRout>,
                 loader: () => fetch('/data.json')
+            },
+            {
+                path: '/card',
+                element: <Cards></Cards>
             },
             {
                 path: '/login',
