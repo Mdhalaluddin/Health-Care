@@ -94,7 +94,7 @@ console.log(sayHi());
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: `correct answer` B: `Hi there, undefined`
+#### Answer: `correct answer` B: `Hi there, undefined` return value is hi there. daynamic value find the return value.
 
 <i>Write your explanation here</i>
 
