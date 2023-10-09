@@ -1,12 +1,18 @@
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 
 const Banner = () => {
+    useEffect(() => {
+        Aos.init({ duration: 2000 })
+    }, [])
     return (
         <nav className="grid grid-cols-2 mx-auto rounded-lg mb-32">
             <div className="hero min-h-screen bg-green-500 bg-opacity-80">
                 <div className="hero-content text-center">
                     <div className="max-w-md">
-                        <h1 className="lg:text-5xl text-4xl font-bold text-white">Good Health Is The Root Of All Heppiness</h1>
-                        <div className="text-white md:flex mt-16 mx-3 my-4 text-start">
+                        <h1 data-aos="fade-down" className="lg:text-5xl text-4xl font-bold text-white">Good Health Is The Root Of All Heppiness</h1>
+                        <div data-aos="fade-up" className="text-white md:flex mt-16 mx-3 my-4 text-start">
                             <div className="border-l-4 mt-2 border-white">
                                 <h2 className="text-3xl font-bold px-2">123</h2>
                                 <p className="text-xl px-2">Expert Doctors</p>
@@ -25,7 +31,7 @@ const Banner = () => {
             </div>
             {/* carusal section */}
             <div>
-                <div className="carousel w-full h-full">
+                <div data-aos="fade-right" className="carousel w-full h-full">
                     <div id="slide1" className="carousel-item relative w-full">
                         {/* text-stard */}
                         <div className="hero min-h-screen" style={{ backgroundImage: 'url(https://i.ibb.co/NLPBmML/carousel-1.jpg)' }}>

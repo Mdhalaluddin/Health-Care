@@ -1,12 +1,18 @@
 import { Link } from "react-router-dom";
 import PropTypes from 'prop-types';
 import { BsCurrencyDollar } from 'react-icons/Bs';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 
 
 const Cards = ({ card }) => {
+    useEffect(() =>{
+            Aos.init({duration: 3000})
+    },[])
     const { name, image, short_description, id, price } = card;
     return (
-        <div className="card w-96 bg-[#EFF5FF] shadow-xl my-5 ">
+        <div data-aos="fade-up" className="card w-96 bg-[#EFF5FF] shadow-xl my-5 ">
             <figure className="">
                 <img src={image} alt="Shoes" className="rounded-xl h-[210px] w-full" />
             </figure>
