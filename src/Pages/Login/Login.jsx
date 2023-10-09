@@ -28,15 +28,15 @@ const Login = () => {
             .catch(error => {
                 console.error(error);
                 // setSingError(error.massage)
-                if(email){
-                    if(setSingError){
+                if (email) {
+                    if (setSingError) {
                         swal('Do not match email')
-                    }  
+                    }
                 }
-                if(password){
-                    if(setSingError){
+                if (password) {
+                    if (setSingError) {
                         swal('Do not match password')
-                    }  
+                    }
                 }
             })
     }
@@ -46,10 +46,10 @@ const Login = () => {
         signInGoogle()
             .then(result => {
                 console.log(result.user);
+                navigate(location?.state ? location.state : '/')
             })
             .catch(error => {
                 console.error(error)
-                // setSingError(error.massage)
             })
 
     }
