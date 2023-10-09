@@ -1,8 +1,15 @@
-# React + Vite
+# Health Care
+> this website is a Health care. Health is our life very important.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- This web site Firebase Authentication web site.email and password accounts, phone auth, and Google, Twitter, Facebook, and GitHub login more and more.
 
-Currently, two official plugins are available:
+- This website is use a navbar, banner section, about, six card and Footer section.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- This website Six router two private router. private not login don't see. Login Email, password, google account.
+
+- Auth firebase install or email, google sign in. main components `AuthProvider` provide because this use our all router.
+- Six fake data map card section. card details other router. Card details is private router. private router see first of all login email, password and google authentication.
+
+- this use `tailwind` `daisyui` `firebase` `react` ``
+
+
